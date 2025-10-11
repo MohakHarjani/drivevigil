@@ -1,0 +1,3 @@
+
+
+pip install opencv-python mediapipe numpy scipy SpeechRecognition PyAudio ultralytics
