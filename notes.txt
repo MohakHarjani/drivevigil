@@ -1,3 +1,83 @@
 
 
 pip install opencv-python mediapipe numpy scipy SpeechRecognition PyAudio ultralytics
+
+To make a repo on github and connect it to local ====>
+
+1. Click on "New Repository" on github account
+2. Create a folder on local machine
+3. type "git init"
+4. connect to remote via. "git remote add origin connection_url"
+5. check the connection via. "git remote -v"
+6. Make changes
+7. Commit changes (git status -> git add . )
+[  git commit -m "start" ]
+8. Push changes by "git push origin branch_name"
+   eg. git push origin master
+9. See all commits "git log"
+//================================================================================================
+
+Create a new branch => git branch new_branch
+Bring head on new branch => git checkout new_branch
+Merge new branch with main branch => git merge new_branch
+
+//===============================================================================================
+
+1. Fork the repository (copying it to your own account)
+2. Create an empty folder, and "git bash there"
+3. "git clone forked_repo_url"
+4. cd into the folder
+5. git checkout -b branch_name
+6. Do changes
+   ->git status
+   ->git add . 
+   ->git commit -m "msg"
+
+7. "git push origin branch_name"
+8. Then open your forked repo
+9. There "Open a pull request option will appear"
+10. Open a pull request from 
+       " Original/master <---- Mohak/branch_name "
+
+//====================================================================================================
+
+HOW TO PULL CHANGES=> (from upstream)
+
+1. Add the upstream url
+"git remote add upstream upstream_main_url"
+
+2. git fetch upstream
+3. git merge upstream/master
+4. If there is error (means there is a conflict)
+5. type (git stash)
+6. Then again type (git merge upstream/master)
+
+
+
+HOW TO PULL CHANGES ===> (from your own repo to local repo)
+
+git pull origin master
+
+//==================================================================================================================
+
+HOW TO FIX PROBLEM OF PUSHING A FOLDER IN GIT REPOSITORY, WHICH IS ITSELF A GIT RPOSITORY
+
+Refernce Link => https://gist.github.com/claraj/e5563befe6c2fb108ad0efb6de47f265
+
+1) enable show hidden files (in file explorer)
+2) delete the ".git" folder inside the folder
+3) type this command in terminal => git rm --cached <folder_name>
+
+
+//================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
